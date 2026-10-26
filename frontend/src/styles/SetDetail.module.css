@@ -1,0 +1,127 @@
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.back {
+  display: inline-block;
+  font-family: 'Urbanist', system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.back:hover {
+  color: var(--accent);
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  margin-bottom: 2.5rem;
+}
+
+/* ── Card flip ── */
+.cardContainer {
+  perspective: 800px;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  min-height: 260px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  border-radius: var(--radius-lg);
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.cardFront,
+.cardBack {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-lg);
+  border: 1.5px solid var(--border);
+  text-align: center;
+}
+
+.cardFront {
+  background: var(--bg-secondary);
+}
+
+.cardBack {
+  background: var(--accent-light);
+  transform: rotateY(180deg);
+}
+
+.cardLabel {
+  position: absolute;
+  top: 14px;
+  left: 18px;
+  font-family: 'Urbanist', system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+}
+
+.card p {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+/* ── Controls ── */
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.controls button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.counter {
+  font-family: 'Urbanist', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  min-width: 60px;
+  text-align: center;
+}
+
+.flipHint {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-top: 0.75rem;
+}
+
+.actions {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 0.75rem;
+}

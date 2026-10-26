@@ -1,0 +1,54 @@
+.subtitle {
+  color: var(--text-secondary);
+  margin-top: 4px;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  color: inherit;
+  transition: background 150ms ease;
+}
+
+.row:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.row:hover {
+  background: var(--bg-secondary);
+}
+
+.rowMain {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.title {
+  font-family: 'Urbanist', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.meta {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.reason {
+  font-size: 0.8rem;
+  color: var(--status-rejected);
+  font-style: italic;
+  margin-top: 2px;
+}

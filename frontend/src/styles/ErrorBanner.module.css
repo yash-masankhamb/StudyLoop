@@ -1,0 +1,29 @@
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 12px 16px;
+  background: #fde8e8;
+  color: var(--status-rejected);
+  border: 1px solid #f5c6c6;
+  border-radius: var(--radius-sm);
+  font-family: 'Urbanist', system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.close {
+  background: none;
+  border: none;
+  color: var(--status-rejected);
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close:hover {
+  opacity: 0.7;
+}

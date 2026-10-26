@@ -1,0 +1,93 @@
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+  padding: 2.5rem 1rem;
+}
+
+.form {
+  width: 100%;
+  max-width: 420px;
+}
+
+.form h1 {
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+  font-size: 0.95rem;
+}
+
+.form label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 1rem;
+  color: var(--text-secondary);
+}
+
+.form input {
+  margin-bottom: 0.5rem;
+}
+
+.form button[type="submit"] {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 13px;
+  font-size: 0.95rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* ── Standalone Quick Test Box ── */
+.demoBox {
+  margin-top: 2rem;
+  padding: 14px 16px;
+  background: var(--bg-secondary);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-md);
+}
+
+.demoTitle {
+  display: block;
+  font-family: 'Urbanist', system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.demoButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.demoBtn {
+  flex: 1;
+  padding: 7px 10px;
+  font-size: 0.8rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 120ms ease;
+}
+
+.demoBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+}

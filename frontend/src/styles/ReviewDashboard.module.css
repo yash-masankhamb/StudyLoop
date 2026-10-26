@@ -1,0 +1,126 @@
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-top: 4px;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.item {
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  margin-bottom: 12px;
+  background: var(--bg-primary);
+}
+
+.itemHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.itemTitle {
+  display: block;
+  font-family: 'Urbanist', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.itemMeta {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.itemSubject {
+  font-family: 'Urbanist', system-ui, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 2px 8px;
+  border-radius: 999px;
+  white-space: nowrap;
+  height: fit-content;
+}
+
+.preview {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.itemActions {
+  display: flex;
+  gap: 8px;
+}
+
+.approveBtn,
+.rejectBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  border: none;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.approveBtn {
+  background: var(--accent-light);
+  color: var(--accent-hover);
+}
+
+.approveBtn:hover {
+  background: #bae8c8;
+}
+
+.rejectBtn {
+  background: #fde8e8;
+  color: var(--status-rejected);
+}
+
+.rejectBtn:hover {
+  background: #f5c6c6;
+}
+
+.rejectForm {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rejectForm textarea {
+  font-size: 0.9rem;
+  min-height: 80px;
+}
+
+.rejectForm button {
+  align-self: flex-end;
+}

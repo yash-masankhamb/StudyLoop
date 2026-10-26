@@ -1,0 +1,25 @@
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  font-family: 'Urbanist', system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 999px;
+}
+
+.pending {
+  background: #fdf3d7;
+  color: #92700c;
+}
+
+.approved {
+  background: var(--accent-light);
+  color: var(--accent-hover);
+}
+
+.rejected {
+  background: #fde8e8;
+  color: var(--status-rejected);
+}
