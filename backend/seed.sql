@@ -3,8 +3,8 @@ USE studyloop;
 -- Users (Password for both: password123)
 -- Hash generated via bcrypt.hash('password123', 10)
 INSERT INTO users (id, name, email, password, role) VALUES
-(1, 'Aisha Patel', 'student@school.edu', '$2a$10$w0954xQf9pGfGvjF3vDqEODQ0b7l9A9E8b6P7k6L7vQ8i1u9y0t2e', 'student'),
-(2, 'Ms. Elena Rivera', 'teacher@school.edu', '$2a$10$w0954xQf9pGfGvjF3vDqEODQ0b7l9A9E8b6P7k6L7vQ8i1u9y0t2e', 'teacher')
+(1, 'Aisha Patel', 'student@school.edu', '$2a$10$RbtpKreSCbetXypvMvdJ/.158CHzmSr1tbzDU9mZnCoV4jFRr5Tm6', 'student'),
+(2, 'Ms. Elena Rivera', 'teacher@school.edu', '$2a$10$RbtpKreSCbetXypvMvdJ/.158CHzmSr1tbzDU9mZnCoV4jFRr5Tm6', 'teacher')
 ON DUPLICATE KEY UPDATE name=VALUES(name);
 
 -- Approved Notes
